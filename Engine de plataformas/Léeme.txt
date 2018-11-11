@@ -1,0 +1,27 @@
+ENGINE DE PLATAFORMAS por sbs91
+Código abierto, úsalo libremente!
+
+Ayuda:
+
+Globales:
+Se puede activar para tener doble salto (poner tenerdsalto=1)
+y para tener botas (tenerbotas=1) para poder correr pulsando Shift
+Selecciona al room al que se va primero (en este caso, next)
+
+Control:
+Persistente, para dibujar el HUD o lo que haga falta
+
+Pj:
+lado=1 si va a la izquierda, y lado=0 si va a la derecha
+En evento de pulsar espacio: cambiar el primer vspeed = -6 por otro valor para saltar más o menos
+
+En step y en pulsar izquierda/derecha se gestionan los sprites
+
+Warps: son las puertas para ir a otro lugar y están automatizadas (no hay que asignar coordenadas x e y)
+-To other room: el objeto wr1 de un room, te manda al objeto wr1 de otro room, al pulsar arriba para entrar
+¿Cómo se a que room? el parámetro "rto" del objeto concreto colocado en el room (click derecho dentro del room) guarda el "room" al que se digige
+
+-Same room: al poner dos puertas "warp1" en un room, estas están comunicadas automáticamente
+Para crear más, duplicar tantos objetos "warpX" como se quiera y ponerle la variable p que corresponda, en create
+
+Waterlevel: al ponerlo, todo lo que esté por debajo será considerado agua, es opcional su uso. El objeto "agua" es mejor pues se coloca donde se quiera. La idea es que waterlevel podría moverse, simulando que el agua sube o baja
