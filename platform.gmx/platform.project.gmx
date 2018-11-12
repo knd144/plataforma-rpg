@@ -37,26 +37,29 @@
     </sprites>
     <sprites name="items">
       <sprite>sprites\spr_item_drop</sprite>
+      <sprites name="runas">
+        <sprite>sprites\spr_runa_del_valor</sprite>
+      </sprites>
+    </sprites>
+    <sprites name="menu">
+      <sprite>sprites\spr_menu_layout</sprite>
+      <sprite>sprites\spr_boton_menu</sprite>
+      <sprites name="equipo">
+        <sprite>sprites\spr_equipo_layout</sprite>
+      </sprites>
     </sprites>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
   <scripts name="scripts">
-    <scripts name="fisica">
-      <script>scripts\scr_colision_bloque.gml</script>
-      <script>scripts\scr_gravedad.gml</script>
-      <script>scripts\scr_colision_escalera.gml</script>
-      <script>scripts\scr_colision_plataforma_horizontal.gml</script>
-      <script>scripts\scr_comportamiento_con_escalera.gml</script>
-      <script>scripts\scr_comportamiento_con_agua.gml</script>
-      <script>scripts\scr_comportamiento_lava.gml</script>
+    <scripts name="acciones">
+      <script>scripts\scr_hacer_danio.gml</script>
+      <script>scripts\scr_atacar.gml</script>
+      <script>scripts\scr_mostrar_mensaje_gui.gml</script>
     </scripts>
     <scripts name="carga">
       <script>scripts\src_create_basico_ser.gml</script>
       <script>scripts\src_carga_globales.gml</script>
-    </scripts>
-    <scripts name="movimiento">
-      <script>scripts\scr_avanzar.gml</script>
     </scripts>
     <scripts name="controles">
       <script>scripts\scr_teclas_movimiento.gml</script>
@@ -67,10 +70,14 @@
       <script>scripts\scr_subir_nivel_personaje.gml</script>
       <script>scripts\scr_intentar_soltar_item_enemigo.gml</script>
     </scripts>
-    <scripts name="acciones">
-      <script>scripts\scr_hacer_danio.gml</script>
-      <script>scripts\scr_atacar.gml</script>
-      <script>scripts\scr_mostrar_mensaje_gui.gml</script>
+    <scripts name="fisica">
+      <script>scripts\scr_colision_bloque.gml</script>
+      <script>scripts\scr_gravedad.gml</script>
+      <script>scripts\scr_colision_escalera.gml</script>
+      <script>scripts\scr_colision_plataforma_horizontal.gml</script>
+      <script>scripts\scr_comportamiento_con_escalera.gml</script>
+      <script>scripts\scr_comportamiento_con_agua.gml</script>
+      <script>scripts\scr_comportamiento_lava.gml</script>
     </scripts>
     <scripts name="inventario_personaje">
       <script>scripts\scr_crear_inventario.gml</script>
@@ -84,6 +91,9 @@
         <script>scripts\scr_desequipar_item.gml</script>
       </scripts>
     </scripts>
+    <scripts name="movimiento">
+      <script>scripts\scr_avanzar.gml</script>
+    </scripts>
   </scripts>
   <fonts name="fonts">
     <font>fonts\fnt_danio</font>
@@ -91,23 +101,19 @@
     <font>fonts\fnt_mensaje_gui</font>
   </fonts>
   <objects name="objects">
-    <objects name="warps_to_other_room">
-      <object>objects\warp_tootherroom</object>
-      <object>objects\wr1</object>
-      <object>objects\wr2</object>
+    <objects name="ataques">
+      <object>objects\obj_ataque_fisico_personaje</object>
+      <object>objects\obj_ataque_personaje_parent</object>
+      <object>objects\obj_ataque_distancia_personaje</object>
     </objects>
-    <objects name="warps_same_room">
-      <object>objects\warp</object>
-      <object>objects\warp1</object>
-      <object>objects\warp2</object>
-      <object>objects\warp3</object>
+    <objects name="configurar_controles">
+      <object>objects\obj_configurar_derecha</object>
+      <object>objects\obj_configurar_tecla</object>
     </objects>
-    <object>objects\jump</object>
-    <objects name="seres">
-      <object>objects\obj_ser_padre</object>
-      <objects name="enemigos">
-        <object>objects\obj_enemigo_padre</object>
-      </objects>
+    <objects name="controles">
+      <object>objects\control</object>
+      <object>objects\globales</object>
+      <object>objects\obj_control_padre</object>
     </objects>
     <objects name="engine">
       <object>objects\pj</object>
@@ -120,40 +126,56 @@
       <object>objects\stopplatform</object>
       <object>objects\platformver</object>
       <object>objects\platformhor</object>
-    </objects>
-    <objects name="objetos_funcionales">
-      <object>objects\obj_danio</object>
-    </objects>
-    <objects name="configurar_controles">
-      <object>objects\obj_configurar_derecha</object>
-      <object>objects\obj_configurar_tecla</object>
-    </objects>
-    <objects name="menu">
-      <object>objects\obj_menu</object>
-    </objects>
-    <objects name="trampas">
-      <object>objects\obj_lava</object>
-      <object>objects\obj_lava_surface</object>
-    </objects>
-    <objects name="ataques">
-      <object>objects\obj_ataque_fisico_personaje</object>
-      <object>objects\obj_ataque_personaje_parent</object>
-      <object>objects\obj_ataque_distancia_personaje</object>
-    </objects>
-    <objects name="test">
-      <object>objects\obj_enemigo_dommy</object>
+      <object>objects\jump</object>
     </objects>
     <objects name="gui">
       <object>objects\obj_camara_jugador</object>
       <object>objects\obj_gui_estadisticas</object>
     </objects>
-    <objects name="controles">
-      <object>objects\control</object>
-      <object>objects\globales</object>
-      <object>objects\obj_control_padre</object>
-    </objects>
     <objects name="items">
       <object>objects\obj_item_drop</object>
+    </objects>
+    <objects name="menu">
+      <object>objects\obj_menu</object>
+      <objects name="botones">
+        <object>objects\obj_boton_equipo</object>
+        <object>objects\obj_boton_menu_padre</object>
+      </objects>
+      <objects name="equipo">
+        <object>objects\obj_menu_equipo</object>
+        <object>objects\obj_contenedor_equipo</object>
+        <object>objects\obj_contenedor_inventario_equipo</object>
+        <object>objects\obj_contenedor_descripcion_equipo</object>
+        <object>objects\obj_boton_equipar</object>
+        <object>objects\obj_boton_desequipar</object>
+      </objects>
+    </objects>
+    <objects name="objetos_funcionales">
+      <object>objects\obj_danio</object>
+    </objects>
+    <objects name="seres">
+      <object>objects\obj_ser_padre</object>
+      <objects name="enemigos">
+        <object>objects\obj_enemigo_padre</object>
+      </objects>
+    </objects>
+    <objects name="test">
+      <object>objects\obj_enemigo_dommy</object>
+    </objects>
+    <objects name="trampas">
+      <object>objects\obj_lava</object>
+      <object>objects\obj_lava_surface</object>
+    </objects>
+    <objects name="warps_same_room">
+      <object>objects\warp</object>
+      <object>objects\warp1</object>
+      <object>objects\warp2</object>
+      <object>objects\warp3</object>
+    </objects>
+    <objects name="warps_to_other_room">
+      <object>objects\warp_tootherroom</object>
+      <object>objects\wr1</object>
+      <object>objects\wr2</object>
     </objects>
   </objects>
   <rooms name="rooms">

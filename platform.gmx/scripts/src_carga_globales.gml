@@ -13,6 +13,8 @@ global.tecla_salto=vk_space;
 global.tecla_ataque_fisico=ord("A");
 global.tecla_ataque_distancia=ord("S");
 global.tecla_accion=ord("D");
+global.tecla_menu = vk_enter;
+global.tecla_cancelar = vk_escape;
 
 global.danio_lava=100;
 

@@ -265,7 +265,7 @@ scr_teclas_acciones();
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>scr_hacer_danio(self,5, true);
+            <string>//scr_hacer_danio(self,5, true);
 </string>
           </argument>
         </arguments>
@@ -288,7 +288,7 @@ scr_teclas_acciones();
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>scr_equipar_item(self,3);
+            <string>//scr_equipar_item(self,3);
 </string>
           </argument>
         </arguments>
