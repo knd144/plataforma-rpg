@@ -40,7 +40,7 @@ switch (_obj) {
     {
         nombre="";
         descripcion="";
-        sprite=0;
+        sprite=spr_runa_del_valor;
         defensaFuegoPorcentual=50;
         break
     }
@@ -48,7 +48,7 @@ switch (_obj) {
     {
         nombre="";
         descripcion="";
-        sprite=0;
+        sprite=spr_runa_del_valor;
         regeneracionVidaBatalla=20;
         break;
     }
@@ -56,7 +56,7 @@ switch (_obj) {
     {
         nombre="Item de prueba";
         descripcion="";
-        sprite=0;
+        sprite=spr_runa_del_valor;
         regeneracionVida=10;
         break;
     }
@@ -64,7 +64,7 @@ switch (_obj) {
     {
         nombre="";
         descripcion="";
-        sprite=0;
+        sprite=spr_runa_del_valor;
         fuerza=10;
         break;
     }

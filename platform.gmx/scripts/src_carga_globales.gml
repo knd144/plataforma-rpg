@@ -32,6 +32,10 @@ global.porcentajeMaximoReduccionDanio=95;
 global.distancia_minima_enemigos_regeneracion=50;
 global.distancia_maxima_enemigos_regeneracion=20;
 
+//enumerados
+global.item_equipado = 1;
+global.item_en_inventario = 2;
+
 //medidas
 global.altura_gui_estadisticas = 100;
 global.escala_vista = 1/2;

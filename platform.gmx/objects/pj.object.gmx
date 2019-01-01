@@ -57,10 +57,13 @@ sprite_derecha_salto=pjrsaltospr;
 
 saltoentrampolin = 12;
 
-//scr_agregar_item_inventario(self,1);
-//scr_agregar_item_inventario(self,2);
-//scr_agregar_item_inventario(self,3);
-//scr_agregar_item_inventario(self,4);
+if(global.test)
+{
+    scr_agregar_item_inventario(self,1);
+    scr_agregar_item_inventario(self,2);
+    scr_agregar_item_inventario(self,3);
+    scr_agregar_item_inventario(self,4);
+}
 </string>
           </argument>
         </arguments>
@@ -288,7 +291,7 @@ scr_teclas_acciones();
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>//scr_equipar_item(self,3);
+            <string>scr_equipar_item(self,3);
 </string>
           </argument>
         </arguments>
@@ -311,7 +314,7 @@ scr_teclas_acciones();
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>//scr_equipar_item(self,2);
+            <string>scr_equipar_item(self,2);
 </string>
           </argument>
         </arguments>
@@ -334,7 +337,7 @@ scr_teclas_acciones();
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>//scr_equipar_item(self,1);
+            <string>scr_equipar_item(self,1);
 </string>
           </argument>
         </arguments>
@@ -357,7 +360,7 @@ scr_teclas_acciones();
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>//scr_equipar_item(self,4);
+            <string>scr_equipar_item(self,4);
 </string>
           </argument>
         </arguments>

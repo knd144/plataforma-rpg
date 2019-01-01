@@ -42,10 +42,14 @@
       </sprites>
     </sprites>
     <sprites name="menu">
+      <sprite>sprites\spr_menu</sprite>
       <sprite>sprites\spr_menu_layout</sprite>
       <sprite>sprites\spr_boton_menu</sprite>
+      <sprite>sprites\spr_marco_submenu</sprite>
       <sprites name="equipo">
         <sprite>sprites\spr_equipo_layout</sprite>
+        <sprite>sprites\spr_marco_visualizador_item</sprite>
+        <sprite>sprites\spr_contenedor_equipo</sprite>
       </sprites>
     </sprites>
   </sprites>
@@ -148,6 +152,8 @@
         <object>objects\obj_contenedor_descripcion_equipo</object>
         <object>objects\obj_boton_equipar</object>
         <object>objects\obj_boton_desequipar</object>
+        <object>objects\obj_visualizador_equipo</object>
+        <object>objects\obj_boton_tirar_item</object>
       </objects>
     </objects>
     <objects name="objetos_funcionales">
