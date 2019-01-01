@@ -58,3 +58,63 @@ global.niveles[9] = 3400;
 global.niveles[10] = 5500;
 global.niveles[11] = 8900;
 global.niveles[12] = 14400;
+
+
+//Cadenas
+
+//Estadísticas
+global.estadisticas[0,0] = "nombre";
+global.estadisticas[0,1] = "Nombre";
+
+global.estadisticas[1,0] = "vidaFija";
+global.estadisticas[1,1] = "Vida";
+
+global.estadisticas[2,0] = "vidaPorcentual";
+global.estadisticas[2,1] = "Vida %";
+
+global.estadisticas[3,0] = "fuerza";
+global.estadisticas[3,1] = "Fuerza";
+
+global.estadisticas[4,0] = "destreza";
+global.estadisticas[4,1] = "Destreza";
+
+global.estadisticas[5,0] = "regeneracionVida";
+global.estadisticas[5,1] = "Regeneración vida";
+
+global.estadisticas[6,0] = "regeneracionVidaPorcentual";
+global.estadisticas[6,1] = "Regeneración vida %";
+
+global.estadisticas[7,0] = "regeneracionVidaBatalla";
+global.estadisticas[7,1] = "Regeneración vida en bat.";
+
+global.estadisticas[8,0] = "regeneracionVidaPorcentualBatalla";
+global.estadisticas[8,1] = "Regeneración vida en bat. %";
+
+global.estadisticas[9,0] = "coldownHabilidades";
+global.estadisticas[9,1] = "Coldown habilidad.";
+
+global.estadisticas[10,0] = "proyectiles";
+global.estadisticas[10,1] = "Proyectiles.";
+
+global.estadisticas[11,0] = "coldownProyectiles";
+global.estadisticas[11,1] = "Coldown proyectil.";
+
+global.estadisticas[12,0] = "defensaFisica";
+global.estadisticas[12,1] = "Def. Fisica";
+
+global.estadisticas[13,0] = "defensaFuegoPorcentual";
+global.estadisticas[13,1] = "Def. Fuego %.";
+
+global.estadisticas[14,0] = "defensaMagiaPorcentual";
+global.estadisticas[14,1] = "Def. magia. %";
+
+global.estadisticas[15,0] = "coldownAtaqueFisico";
+global.estadisticas[15,1] = "Coldown ataque.";
+
+global.estadisticas[16,0] = "sprite";
+global.estadisticas[16,1] = "Imagen";
+
+global.estadisticas[17,0] = "descripcion";
+global.estadisticas[17,1] = "Descripción";
+
+global.totalEstadisticas = 17;

@@ -50,6 +50,7 @@
         <sprite>sprites\spr_equipo_layout</sprite>
         <sprite>sprites\spr_marco_visualizador_item</sprite>
         <sprite>sprites\spr_contenedor_equipo</sprite>
+        <sprite>sprites\spr_contenedor_descripcion_equipo</sprite>
       </sprites>
     </sprites>
   </sprites>

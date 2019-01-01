@@ -28,11 +28,11 @@
             <string>if(instance_exists(pj))
 {
     var xx = x + 2;
-    var yy = y + 18;
+    var yy = y + 2;//18;
     var longitud_visualizador = 32;
     for(var i=0;i&lt;ds_list_size(pj.inventario);i++)
     {
-        var visualizador = instance_create(xx + (longitud_visualizador/2), yy + (i*longitud_visualizador), obj_visualizador_equipo);
+        var visualizador = instance_create(xx + (longitud_visualizador/2), yy + (longitud_visualizador/2) + (i*longitud_visualizador), obj_visualizador_equipo);
         visualizador.item_id = ds_list_find_value(pj.inventario,i);
         visualizador.estado = global.item_equipado;
     }
