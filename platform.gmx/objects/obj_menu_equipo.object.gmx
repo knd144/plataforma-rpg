@@ -28,6 +28,7 @@
             <string>item_id = 0;
 estado = false;
 contenedor_equipo = instance_create(x,y,obj_contenedor_equipo);
+contenedor_descripcion = instance_create(x+340,y+10,obj_contenedor_descripcion_equipo);
 </string>
           </argument>
         </arguments>

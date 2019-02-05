@@ -103,6 +103,7 @@
   <fonts name="fonts">
     <font>fonts\fnt_danio</font>
     <font>fonts\fnt_gui_estadisticas</font>
+    <font>fonts\fnt_descripcion_items</font>
     <font>fonts\fnt_mensaje_gui</font>
   </fonts>
   <objects name="objects">

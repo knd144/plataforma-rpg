@@ -55,7 +55,7 @@ switch (_obj) {
     case 3:
     {
         nombre="Item de prueba";
-        descripcion="";
+        descripcion="Item que no tiene#utilidad alguna.##Fue creado solo para la versión de#pruebas.";
         sprite=spr_runa_del_valor;
         regeneracionVida=10;
         break;

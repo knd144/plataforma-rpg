@@ -117,4 +117,4 @@ global.estadisticas[16,1] = "Imagen";
 global.estadisticas[17,0] = "descripcion";
 global.estadisticas[17,1] = "Descripción";
 
-global.totalEstadisticas = 17;
+global.totalEstadisticas = 18;
