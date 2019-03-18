@@ -51,6 +51,7 @@
         <sprite>sprites\spr_marco_visualizador_item</sprite>
         <sprite>sprites\spr_contenedor_equipo</sprite>
         <sprite>sprites\spr_contenedor_descripcion_equipo</sprite>
+        <sprite>sprites\spr_contenedor_inventario_equipo</sprite>
       </sprites>
     </sprites>
   </sprites>
@@ -61,6 +62,10 @@
       <script>scripts\scr_hacer_danio.gml</script>
       <script>scripts\scr_atacar.gml</script>
       <script>scripts\scr_mostrar_mensaje_gui.gml</script>
+      <scripts name="menu_equipo">
+        <script>scripts\scr_refrescar_menu_inventario.gml</script>
+        <script>scripts\scr_cambiar_indice_inventario.gml</script>
+      </scripts>
     </scripts>
     <scripts name="carga">
       <script>scripts\src_create_basico_ser.gml</script>
@@ -146,6 +151,11 @@
       <objects name="botones">
         <object>objects\obj_boton_equipo</object>
         <object>objects\obj_boton_menu_padre</object>
+        <objects name="inventario">
+          <object>objects\obj_avanzar_pagina_inventario</object>
+          <object>objects\obj_retroceder_pagina_inventario</object>
+          <object>objects\obj_equipar_desequipar</object>
+        </objects>
       </objects>
       <objects name="equipo">
         <object>objects\obj_menu_equipo</object>

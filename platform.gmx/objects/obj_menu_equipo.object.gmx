@@ -28,7 +28,11 @@
             <string>item_id = 0;
 estado = false;
 contenedor_equipo = instance_create(x,y,obj_contenedor_equipo);
+contenedor_inventario = instance_create(x+50,y,obj_contenedor_inventario_equipo);
 contenedor_descripcion = instance_create(x+340,y+10,obj_contenedor_descripcion_equipo);
+boton_retroceder_inventario = instance_create(x+100,y+220,obj_retroceder_pagina_inventario);
+boton_avanzar_inventario = instance_create(x+200,y+220,obj_avanzar_pagina_inventario);
+boton_equipar_desequipar = instance_create(x+200,y+250,obj_equipar_desequipar);
 </string>
           </argument>
         </arguments>

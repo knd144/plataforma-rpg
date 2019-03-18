@@ -3,9 +3,9 @@
   <spriteName>spr_boton_menu</spriteName>
   <solid>0</solid>
   <visible>-1</visible>
-  <depth>-1001</depth>
+  <depth>-1010</depth>
   <persistent>0</persistent>
-  <parentName>obj_menu</parentName>
+  <parentName>obj_boton_menu_padre</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
     <event eventtype="0" enumb="0">
@@ -25,14 +25,11 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>texto = "";
-bandera_clic = true;
+            <string>event_inherited();
 </string>
           </argument>
         </arguments>
       </action>
-    </event>
-    <event eventtype="2" enumb="0">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -49,13 +46,13 @@ bandera_clic = true;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>bandera_clic= true;
+            <string>texto="A N T E R I O R";
 </string>
           </argument>
         </arguments>
       </action>
     </event>
-    <event eventtype="6" enumb="0">
+    <event eventtype="7" enumb="10">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -72,39 +69,7 @@ bandera_clic = true;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(bandera_clic)
-{
-    event_user(0);
-    bandera_clic= false;
-    alarm[0]=room_speed/2;
-}
-
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="8" enumb="0">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>draw_self();
-draw_set_colour(c_maroon);
-draw_set_halign(fa_center);
-draw_text(x,y-sprite_get_height(sprite_index)/2,texto);
+            <string>scr_cambiar_indice_inventario(-1);
 </string>
           </argument>
         </arguments>

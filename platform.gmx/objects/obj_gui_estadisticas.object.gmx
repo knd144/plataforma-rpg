@@ -141,6 +141,7 @@ else if(tiempo_recorrido_ataque_distancia&gt;tiempo_ataque_distancia)
 
     draw_rectangle_colour(0,inicio_gui_coordenada_y, largo_vista, alto_vista,c_black,c_black,c_black,c_black,false);
     draw_set_font(fnt_gui_estadisticas) ;
+    draw_set_halign(fa_left);
     draw_set_color(c_white);
     draw_text(tabulacion,inicio_gui_coordenada_y,"Vida: "+string(pj.vida)+"/"+string(pj.vidamaxima));
     draw_text(tabulacion,inicio_gui_coordenada_y+espacio_entre_texto*1,"Fuerza: "+string(pj.fuerzaTotal));

@@ -3,9 +3,9 @@
   <spriteName>spr_boton_menu</spriteName>
   <solid>0</solid>
   <visible>-1</visible>
-  <depth>-1001</depth>
+  <depth>-1010</depth>
   <persistent>0</persistent>
-  <parentName>obj_menu</parentName>
+  <parentName>obj_boton_menu_padre</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
     <event eventtype="0" enumb="0">
@@ -25,14 +25,11 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>texto = "";
-bandera_clic = true;
+            <string>event_inherited();
 </string>
           </argument>
         </arguments>
       </action>
-    </event>
-    <event eventtype="2" enumb="0">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -49,13 +46,13 @@ bandera_clic = true;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>bandera_clic= true;
+            <string>texto= "";
 </string>
           </argument>
         </arguments>
       </action>
     </event>
-    <event eventtype="6" enumb="0">
+    <event eventtype="3" enumb="0">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -72,19 +69,23 @@ bandera_clic = true;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(bandera_clic)
+            <string>if(instance_exists(obj_menu_equipo))
 {
-    event_user(0);
-    bandera_clic= false;
-    alarm[0]=room_speed/2;
+    if(obj_menu_equipo.estado == global.item_en_inventario)
+    {
+        texto="E Q U I P A R";
+    }
+    else if(obj_menu_equipo.estado == global.item_equipado)
+    {
+        texto="Q U I T A R";
+    }
 }
-
 </string>
           </argument>
         </arguments>
       </action>
     </event>
-    <event eventtype="8" enumb="0">
+    <event eventtype="7" enumb="10">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -101,10 +102,19 @@ bandera_clic = true;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>draw_self();
-draw_set_colour(c_maroon);
-draw_set_halign(fa_center);
-draw_text(x,y-sprite_get_height(sprite_index)/2,texto);
+            <string>if(instance_exists(obj_menu_equipo) &amp;&amp; instance_exists(pj))
+{
+    if(obj_menu_equipo.estado == global.item_en_inventario)
+    {
+        scr_equipar_item(pj,obj_menu_equipo.item_id);
+        scr_refrescar_menu_inventario();
+    }
+    else if(obj_menu_equipo.estado == global.item_equipado)
+    {
+        scr_desequipar_item(pj,obj_menu_equipo.item_id);
+        scr_refrescar_menu_inventario();
+    }
+}
 </string>
           </argument>
         </arguments>

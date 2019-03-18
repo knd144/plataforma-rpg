@@ -25,15 +25,38 @@
         <arguments>
           <argument>
             <kind>1</kind>
+            <string>event_user(15);
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="7" enumb="25">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
             <string>if(instance_exists(pj))
 {
     var xx = x + 2;
     var yy = y + 2;//18;
     var longitud_visualizador = 32;
-    for(var i=0;i&lt;ds_list_size(pj.inventario);i++)
+    for(var i=0;i&lt;ds_list_size(pj.slots);i++)
     {
         var visualizador = instance_create(xx + (longitud_visualizador/2), yy + (longitud_visualizador/2) + (i*longitud_visualizador), obj_visualizador_equipo);
-        visualizador.item_id = ds_list_find_value(pj.inventario,i);
+        visualizador.item_id = ds_list_find_value(pj.slots,i);
         visualizador.estado = global.item_equipado;
     }
 }
