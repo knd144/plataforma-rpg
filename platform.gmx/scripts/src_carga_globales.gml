@@ -118,3 +118,9 @@ global.estadisticas[17,0] = "descripcion";
 global.estadisticas[17,1] = "Descripción";
 
 global.totalEstadisticas = 18;
+
+global.cofreCerrado = 0;
+global.cofreAbierto = 1;
+
+global.archivoData = "data.ini";
+global.cofresData = "cofres";

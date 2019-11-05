@@ -39,6 +39,9 @@
       <sprite>sprites\spr_item_drop</sprite>
       <sprites name="runas">
         <sprite>sprites\spr_runa_del_valor</sprite>
+        <sprite>sprites\spr_runa_4</sprite>
+        <sprite>sprites\spr_runa_3</sprite>
+        <sprite>sprites\spr_runa_brio</sprite>
       </sprites>
     </sprites>
     <sprites name="menu">
@@ -53,6 +56,15 @@
         <sprite>sprites\spr_contenedor_descripcion_equipo</sprite>
         <sprite>sprites\spr_contenedor_inventario_equipo</sprite>
       </sprites>
+    </sprites>
+    <sprites name="auxiliares">
+      <sprite>sprites\spr_exclamacion</sprite>
+    </sprites>
+    <sprites name="objetos_interactuables">
+      <sprite>sprites\spr_cofre_cerrado</sprite>
+      <sprite>sprites\spr_cofre_abierto</sprite>
+      <sprite>sprites\spr_cofre_llave_cerrado</sprite>
+      <sprite>sprites\spr_cofre_llave_abierto</sprite>
     </sprites>
   </sprites>
   <backgrounds name="background"/>
@@ -103,6 +115,10 @@
     </scripts>
     <scripts name="movimiento">
       <script>scripts\scr_avanzar.gml</script>
+    </scripts>
+    <scripts name="cofres">
+      <script>scripts\scr_obtener_estado_cofre.gml</script>
+      <script>scripts\scr_abrir_cofre.gml</script>
     </scripts>
   </scripts>
   <fonts name="fonts">
@@ -179,6 +195,9 @@
     </objects>
     <objects name="test">
       <object>objects\obj_enemigo_dommy</object>
+      <object>objects\obj_enemigo_dommy_2</object>
+      <object>objects\obj_enemigo_dommy_3</object>
+      <object>objects\obj_enemigo_dommy_4</object>
     </objects>
     <objects name="trampas">
       <object>objects\obj_lava</object>
@@ -194,6 +213,9 @@
       <object>objects\warp_tootherroom</object>
       <object>objects\wr1</object>
       <object>objects\wr2</object>
+    </objects>
+    <objects name="objetos_interactuables">
+      <object>objects\obj_cofre</object>
     </objects>
   </objects>
   <rooms name="rooms">

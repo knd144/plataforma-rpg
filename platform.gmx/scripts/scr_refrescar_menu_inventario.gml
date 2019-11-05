@@ -6,7 +6,7 @@ with(obj_menu_equipo)
 {
     event_user(15);
 }
-with(obj_menu_equipo)
+/*with(obj_menu_equipo)
 {
     event_user(15);
 }/**/

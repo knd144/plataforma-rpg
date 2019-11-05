@@ -48,7 +48,7 @@ switch (_obj) {
     {
         nombre="";
         descripcion="";
-        sprite=spr_runa_del_valor;
+        sprite=spr_runa_brio;
         regeneracionVidaBatalla=20;
         break;
     }
@@ -56,7 +56,7 @@ switch (_obj) {
     {
         nombre="Item de prueba";
         descripcion="Item que no tiene#utilidad alguna.##Fue creado solo para la versión de#pruebas.";
-        sprite=spr_runa_del_valor;
+        sprite=spr_runa_3;
         regeneracionVida=10;
         break;
     }
@@ -64,7 +64,7 @@ switch (_obj) {
     {
         nombre="";
         descripcion="";
-        sprite=spr_runa_del_valor;
+        sprite=spr_runa_4;
         fuerza=10;
         break;
     }

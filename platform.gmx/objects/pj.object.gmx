@@ -60,7 +60,7 @@ saltoentrampolin = 12;
 if(global.test)
 {
     scr_agregar_item_inventario(self,1);
-    scr_agregar_item_inventario(self,2);
+    /*scr_agregar_item_inventario(self,2);
     scr_agregar_item_inventario(self,3);
     scr_agregar_item_inventario(self,4);
     scr_agregar_item_inventario(self,1);
@@ -88,7 +88,7 @@ if(global.test)
     scr_agregar_item_inventario(self,3);
     scr_agregar_item_inventario(self,4);
     scr_agregar_item_inventario(self,1);
-    scr_agregar_item_inventario(self,3);
+    scr_agregar_item_inventario(self,3);/**/
 }
 </string>
           </argument>
