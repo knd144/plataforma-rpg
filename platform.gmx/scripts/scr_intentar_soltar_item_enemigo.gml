@@ -16,3 +16,4 @@ if(tirada>argument1)
 }
 var drop = instance_create(x,y,obj_item_drop);
 drop.item_id = argument0;
+return true;

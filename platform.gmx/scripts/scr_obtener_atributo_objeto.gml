@@ -34,6 +34,8 @@ defensaFisica=0;
 defensaFuegoPorcentual= 0;
 defensaMagiaPorcentual= 0;
 
+tipo=global.tipoEquipo;
+
 //Ahora traeremos la información de cada uno de los objetos del juego, si no colocas info, queda la de defecto
 switch (_obj) {
     case 1:
@@ -68,24 +70,31 @@ switch (_obj) {
         fuerza=10;
         break;
     }
+    case 5:
+    {
+        nombre= "Llave genérica de cofre";
+        descripcion= "Llave para la mayoría de los cofres";
+        tipo= global.tipoItem;
+    }
 }
 
 //Después que el script tiene el valor, debes retornarlo con la función "return".
-if _val = "vidaFija" return  vidaFija;
-if _val = "vidaPorcentual" return  vidaPorcentual;
-if _val = "fuerza" return  fuerza;
-if _val = "destreza" return  destreza;
-if _val = "regeneracionVida" return  regeneracionVida;
-if _val = "regeneracionVidaPorcentual" return  regeneracionVidaPorcentual;
-if _val = "regeneracionVidaBatalla" return regeneracionVidaBatalla;
-if _val = "regeneracionVidaPorcentualBatalla" return  regeneracionVidaPorcentualBatalla;
-if _val = "coldownHabilidades" return  coldownHabilidades;
-if _val = "proyectiles" return  proyectiles;
-if _val = "coldownProyectiles" return  coldownProyectiles;
-if _val = "nombre" return nombre;
-if _val = "descripcion" return  descripcion;
-if _val = "sprite" return  sprite;
-if _val = "defensaFisica" return  defensaFisica;
-if _val = "defensaFuegoPorcentual" return defensaFuegoPorcentual;
-if _val = "defensaMagiaPorcentual" return  defensaMagiaPorcentual;
-if _val = "coldownAtaqueFisico" return coldownAtaqueFisico;
+if _val == "vidaFija" return  vidaFija;
+if _val == "vidaPorcentual" return  vidaPorcentual;
+if _val == "fuerza" return  fuerza;
+if _val == "destreza" return  destreza;
+if _val == "regeneracionVida" return  regeneracionVida;
+if _val == "regeneracionVidaPorcentual" return  regeneracionVidaPorcentual;
+if _val == "regeneracionVidaBatalla" return regeneracionVidaBatalla;
+if _val == "regeneracionVidaPorcentualBatalla" return  regeneracionVidaPorcentualBatalla;
+if _val == "coldownHabilidades" return  coldownHabilidades;
+if _val == "proyectiles" return  proyectiles;
+if _val == "coldownProyectiles" return  coldownProyectiles;
+if _val == "nombre" return nombre;
+if _val == "descripcion" return  descripcion;
+if _val == "sprite" return  sprite;
+if _val == "defensaFisica" return  defensaFisica;
+if _val == "defensaFuegoPorcentual" return defensaFuegoPorcentual;
+if _val == "defensaMagiaPorcentual" return  defensaMagiaPorcentual;
+if _val == "coldownAtaqueFisico" return coldownAtaqueFisico;
+if _val == "tipo" return tipo;

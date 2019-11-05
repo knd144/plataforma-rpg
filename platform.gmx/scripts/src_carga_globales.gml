@@ -124,3 +124,6 @@ global.cofreAbierto = 1;
 
 global.archivoData = "data.ini";
 global.cofresData = "cofres";
+
+global.tipoEquipo = 1;
+global.tipoItem = 2;
